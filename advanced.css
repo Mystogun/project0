@@ -1,0 +1,84 @@
+html {
+    font: 13px Roboto, Arial, SansSerif;
+}
+
+/* COLUMN */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV */
+.nav {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+}
+
+.nav ul {
+    display: inline;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+    text-underline: black;
+}
+
+
+h4 {
+    color: #d93025;
+    font-size: 20px;
+}
+
+/* MAIN */
+td {
+    padding: 0 15px;
+}
+.advanced-form {
+    display: block;
+}
+
+.advanced-input-text {
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    background: #fff;
+    color: #3c4043;
+    padding: 5px;
+    width: 500px;
+    max-width: 584px;
+    text-align: start;
+}
+
+.advanced-input-text:focus {
+    border: 1px solid #dfe1e5;
+    outline-width: 0;
+}
+
+#advanced-input-button {
+    border: 1px solid #3079ed;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #4d90fe;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    padding: 0 16px;
+    margin-left: 73%;
+}
+
+
+#advanced-input-button:hover {
+    background-image: linear-gradient(top, #4d90fe, #4787ed);
+}

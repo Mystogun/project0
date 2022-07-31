@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Search</title>
+
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+
+<div class="column">
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html">Regular Search</a>
+            </li>
+        </ul>
+    </div>
+
+    <h4>Advanced Search</h4>
+
+
+    <div class="main">
+        <form class="advanced-form" action="https://www.google.com/search">
+
+            <table style="margin: 10px;">
+                <tr>
+                    <td>
+                        <label for="allTheseWords">All These Words:</label>
+                    </td>
+                    <td>
+                        <input class="advanced-input-text" id="allTheseWords" type="text" name="as_q"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="thisExactWord">This Exact Word or phrase:</label>
+                    </td>
+                    <td>
+                        <input class="advanced-input-text" id=thisExactWord type="text" name="as_epq"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="anyOfTheseWords">Any of These Words:</label>
+                    </td>
+                    <td>
+                        <input class="advanced-input-text" id=anyOfTheseWords type="text" name="as_oq"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="noneOfTheseWords">None of These Words:</label>
+                    </td>
+                    <td>
+                        <input class="advanced-input-text" id=noneOfTheseWords type="text" name="as_eq"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="advanced-input-button" type="submit" value="Advanced Search"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
