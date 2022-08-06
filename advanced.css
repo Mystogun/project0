@@ -2,6 +2,10 @@ html {
     font: 13px Roboto, Arial, SansSerif;
 }
 
+body {
+    margin: 0;
+}
+
 /* COLUMN */
 .column {
     display: flex;
@@ -10,11 +14,13 @@ html {
 
 /* NAV */
 .nav {
-    display: inline;
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: flex;
     margin-top: 10px;
+    justify-content: space-around;
+}
+
+.spacer {
+    width: 75%;
 }
 
 .nav ul {
@@ -36,16 +42,67 @@ html {
     text-underline: black;
 }
 
+.icon-container {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+}
 
-h4 {
+.grid-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    padding: 4px 4px 4px 4px;
+}
+
+.grid-icon:hover {
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
+img {
+    width: 74px;
+    height: 24px;
+    align-self: center;
+    margin-left: 1%;
+}
+
+#advanced-search {
     color: #d93025;
     font-size: 20px;
+    margin-left: 3%;
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+}
+
+#title {
+    color: #333;
+    font-size: 16px;
+}
+
+#hint-title {
+    color: #777;
+    font-size: 13px;
 }
 
 /* MAIN */
-td {
-    padding: 0 15px;
+table {
+    margin-left: 3%;
 }
+td {
+    padding-right: 15px;
+}
+
+p {
+    color: #666;
+}
+
 .advanced-form {
     display: block;
 }
@@ -80,5 +137,5 @@ td {
 
 
 #advanced-input-button:hover {
-    background-image: linear-gradient(top, #4d90fe, #4787ed);
+    background-color: #4787ed;
 }

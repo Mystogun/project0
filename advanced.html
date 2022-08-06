@@ -10,26 +10,43 @@
 
 <div class="column">
     <div class="nav">
+        <img src="googlelogo.png" alt="">
+        <div class="spacer"></div>
         <ul>
             <li>
                 <a href="index.html">Regular Search</a>
             </li>
         </ul>
+
+        <div class="icon-container">
+            <img class="grid-icon"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAA8UlEQVRoge3WsW3CQBSH8e/OLEB6ZoApyBzMQGGkNBRQWiwQOX2YgIId0lInbYTEAPcojCks51wk0ovQ/1f6/Nl6dvNARER+IQzdsHipJhbTDpg3V+wYzVb1pjx5N4MD3B76ATx1js4hxenbdvnp1bRiboDbF+k+FGBs0SrPppUdgPvv7H3ts3MDDA+QY/+hGRjAjj+dBDj4No3sANFsBZx7jr6LIi09m3ubO6w35SmkOIWwBy7AJcD7qEiz13X55dmIyIPQMufVtLTMOTaAljnPpqFlzqsRkQehZc6raWmZc2wALXOeTUPLnFcjIiJ/4goIg6Nl0/ey3AAAAABJRU5ErkJggg==">
+        </div>
     </div>
 
-    <h4>Advanced Search</h4>
 
+    <p id="advanced-search">Advanced Search</p>
+
+    <div style="height: 1px; background-color: #ebebeb"></div>
 
     <div class="main">
         <form class="advanced-form" action="https://www.google.com/search">
 
-            <table style="margin: 10px;">
+            <table>
+                <tr>
+                    <td><p id="title">Find pages with...</p></td>
+                    <td></td>
+                    <td><h5 id="hint-title">To do this in the search box.</h5></td>
+                </tr>
                 <tr>
                     <td>
                         <label for="allTheseWords">All These Words:</label>
                     </td>
                     <td>
                         <input class="advanced-input-text" id="allTheseWords" type="text" name="as_q"/>
+                    </td>
+                    <td>
+                        <p>Type the important words: tri-colour rat terrier</p>
                     </td>
                 </tr>
 
@@ -40,6 +57,9 @@
                     <td>
                         <input class="advanced-input-text" id=thisExactWord type="text" name="as_epq"/>
                     </td>
+                    <td>
+                        <p>Put exact words in quotes: "rat terrier"</p>
+                    </td>
                 </tr>
 
                 <tr>
@@ -49,6 +69,9 @@
                     <td>
                         <input class="advanced-input-text" id=anyOfTheseWords type="text" name="as_oq"/>
                     </td>
+                    <td>
+                        <p>Type OR between all the words you want: miniature OR standard</p>
+                    </td>
                 </tr>
 
                 <tr>
@@ -57,6 +80,9 @@
                     </td>
                     <td>
                         <input class="advanced-input-text" id=noneOfTheseWords type="text" name="as_eq"/>
+                    </td>
+                    <td>
+                        <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
                     </td>
                 </tr>
 

@@ -1,5 +1,12 @@
 html {
     font: 13px Roboto, Arial, SansSerif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* COLUMN */
@@ -10,11 +17,9 @@ html {
 
 /* NAV */
 .nav {
-    display: inline;
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: flex;
     margin-top: 10px;
+    justify-content: flex-end;
 }
 
 .nav ul {
@@ -36,15 +41,36 @@ html {
     text-underline: black;
 }
 
+.icon-container {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.grid-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    padding: 4px 4px 4px 4px;
+}
+
+.grid-icon:hover {
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
 /* LOGO */
 
 .logo {
     display: flex;
     justify-content: center;
-    padding-top: 20%;
+    margin-top: 15%;
 }
 
-img {
+.main-image {
     width: 272px;
 }
 
@@ -78,21 +104,20 @@ form input {
 }
 
 form input[type=text] {
-    border: 1px solid #dfe1e5;
-    border-radius: 24px;
     background: #fff;
     color: #3c4043;
-    height: 44px;
     max-width: 584px;
-    padding: 0 16px;
+    padding: 0 8px;
     text-align: start;
+    border: none;
+    font-size: 16px;
+    width: 80%;
 }
 
 form input[type=text]:focus {
-    border: 1px solid #dfe1e5;
+    border: none;
     outline-width: 0;
 }
-
 
 form input[type=submit] {
     border: none;
@@ -107,11 +132,71 @@ form input[type=submit] {
     padding: 0 16px;
 }
 
-
 form input[type=submit]:hover {
     border: 1px solid #3c404350;
 }
 
+.shadow {
+    transition: box-shadow 0.1s;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    max-width: 584px;
+    height: 44px;
+    padding: 0 5px;
+}
+
+.shadow:hover {
+    box-shadow: 0 1px 6px rgb(0 0 0 / 20%);
+}
+
+
 .main div[style=column] {
     width: 582px;
+}
+
+.language {
+    font-family: Arial, sans-serif;
+    line-height: 28px;
+    color: #4d5156;
+}
+
+.language-option {
+    padding: 0 5px;
+    color: #1a0dab;
+    text-decoration: none
+}
+
+.language-option:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0
+}
+
+.footer-location {
+    margin: 0;
+    padding: 15px 30px;
+    font-style: normal;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #70757a;
+}
+
+.footer-link {
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-list {
+    align-items: center;
+    padding: 15px 20px
 }
